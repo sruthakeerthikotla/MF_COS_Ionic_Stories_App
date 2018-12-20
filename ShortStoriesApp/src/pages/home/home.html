@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Short Stories App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="home">
+  <ion-card>
+    <ion-card-content>
+      Hello! This app lets you read short stories. You can also add your own stories! :)
+<br><br>
+      <button (click)="getStories()">Get all stories</button>
+<br><br>
+<div>OR</div>
+<br>
+      <button (click)="showAddStory()">Add story</button>
+<br>
+<div id="getDiv" style="display:none">
+      <div class = "list">
+        <ol type="1" id="objects">
+        </ol>
+      </div>
+
+<br>
+
+      <div>
+        <div id="storiestext">Select the story to be loaded : </div>
+        <select id="stories"></select>
+        <button id="loadbtn" (click) = "getObjectData()">Load</button>
+      
+      </div>
+
+        <br>
+        <div><p id="objectcontent"></p></div>
+
+      </div>
+      <div id="addDiv" style="display:none;">
+<div>Enter a name for your short story : </div>
+<input id="storyName"/>
+<br>
+<div></div>
+<br>
+<textarea id="storycontent">
+</textarea>
+<br>
+<button (click)="addStory()">Add to COS</button>
+<br>
+<div><p id="storyaddresult"></p></div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "cameApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
